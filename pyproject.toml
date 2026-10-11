@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconforge"
+version = "3.1.0"
+description = "Zero-dependency toolkit for authorized security reconnaissance with scope guardrails"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Saad" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+reconforge = "reconforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
